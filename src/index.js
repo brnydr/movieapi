@@ -15,7 +15,7 @@ async function getMovie(movie) {
 function printMovie(response) {
   let movieOutput = document.querySelector("#movieOutput");
   let movieList = response.Search;
-  movieOutput.innerText = movieList
+  movieOutput.innerText = movieList;
 }
 
 function printError(response) {
