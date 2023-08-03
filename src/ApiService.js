@@ -1,4 +1,4 @@
-export class MovieApiService {
+export default class MovieApiService {
   static async getMovie(movie) {
     try {
       fetch(`http://www.omdbapi.com/?apikey=${process.env.API_KEY}&s=${movie}`);
@@ -10,7 +10,7 @@ export class MovieApiService {
       return response;
     }
     catch(error) {
-    return error;
+      return error;
     }
   }
 }
