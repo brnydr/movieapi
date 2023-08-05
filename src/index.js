@@ -29,12 +29,11 @@ function printMovie(response) {
  button.setAttribute("id", "clearButton");
  movieList.append(button);
  button.addEventListener("click", reloadPage);
- 
 }
 
 
-function printError(response) {
-  document.querySelector("#movieOutput").innerText = `There was an error handling your request: ${response.message}`;
+function printError(response, movie) {
+  document.querySelector("#movieOutput").innerText = `There was an error handling your request for ${movie}: ${response.Error}`;
 }
 
 
